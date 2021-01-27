@@ -9,7 +9,8 @@ This tool was used for the game [Bolzplatz 2006](https://github.com/Xenoage/Bolz
 
 ### How to compile
 
-A Visual Basic 6 toolchain is required.
+Visual Studio 6 is required for building the `jestart.vbp` Visual Basic 6 project.
+[Dev-C++](http://dev-cpp.com/) was used to compile the `c/javastarter.dev` project, but any C++ tools should work.
 
 ### How to run
 
