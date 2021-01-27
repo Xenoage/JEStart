@@ -6,3 +6,15 @@ It generates a windows executable (.exe) with an icon, that starts a runnable Ja
 and the .jar can be embedded in the .exe file.
 
 This tool was used for the game [Bolzplatz 2006](https://github.com/Xenoage/Bolzplatz2006) for example.
+
+### How to compile
+
+A Visual Basic 6 toolchain is required.
+
+### How to run
+
+The Visual Basic 6 runtimes are required. Also install the "Microsoft Visual Basic 6.0 Common Controls" and "comdlg32.ocx". Use a search engine to find the files, and don't forget to register them in an administrator terminal, calling e.g. `regsvr32 C:\Windows\SysWOW64\mscomctl.ocx` for each ocx file (comdlg32.ocx and mscomctl.ocx).
+
+### Screenshot
+
+![Screenshot](screenshot.png)
