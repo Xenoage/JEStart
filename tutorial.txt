@@ -1,0 +1,102 @@
+
+Xenoage Java Exe Starter 2.1
+****************************
+
+(c) 2006 by Andreas Wenger, Xenoage Software
+
+
+In Java you can generate executable Jar-files. But most windows users are only familiar with Exe files. Moreover it is not possible to assign icons to a Java Archive. This program solves these problems by generating an Exe with an arbitrary icon, that starts the Jar when it is launched. You can also choose which JRE versions are allowed and you can pack the Jar into the Exe file so that you need only to deliver one single file.
+
+Xenoage Java Exe Starter is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License (read license.txt). If you like this program, please support us with a voluntary donation ( http://www.xenoage.com/donate/ ).
+
+
+
+New features in version 2.1
+***************************
+
+In comparison to version 2.0, the following things are new (see changelog.txt for details):
+
+- The return code of the Java program (System.exit(int)) is returned to the prompt (thanks to Thomas Nenninger for the code!)
+
+- It is now possible to use a given JRE path.
+
+- There are now up to 3000 characters for the options and 2000 characters for the arguments, also other parameters have more characters now.
+
+
+
+Tutorial
+********
+
+The Xenoage Java Exe Starter has a graphical user interface that allows you to make your decisions step for step.
+
+Start on the first page, "General". You have first to choose your Jar file. At the moment it is not important in which folder it is.
+Then you can select a 32x32 pixel and a 16x16 pixel icon for your Exe file. Please notice that only icons with 256 colors are allowed. You can use the freeware tool "IconEdit32" to create or convert icons into this format.
+Afterwards you have to choose between "javaw.exe" and "java.exe". Use the first one for applications with a graphical user interface, because javaw.exe hides the console window that may be perhaps shown if you use java.exe.
+After that, you have to set the options and arguments for the Jar file. If you don't understand the meaning of the default values, don't worry. In most cases these values are OK and you don't have to change them.
+
+On the second page, "JRE", you can specify if your application needs a certain version of the Java Runtime Environment. Be as general as possible with your choice. If you type "1.3" for example, all JREs that begin with "1.3" (like "1.3.0", "1.3.2_02", and so on) will be accepted, if you type for example "1.4.0", only versions starting with "1.4.0" (like "1.4.0", "1.4.0_03") will be accepted.
+Check the "or higher" box, if you also want to accept newer versions as the specified. For example, if you typed "1.4.0" above and selected this option, then for example the JREs "1.4.1" or "1.5.0" will be accepted.
+If the checkbox below is selected and a registry error occurs (for example when Java is not installed correctly, but not if no suitable JRE was found), your Exe will try to start the Jar anyway by just calling "java.exe" or "javaw.exe" without a path.
+You can also choose a JRE path, but use this only if you are sure that the generated exe is only used on systems where there is really a JRE installed, like within your company.
+
+On the third page, "Pack Jar", you can tell the Xenoage Java Exe Starter to pack the Jar into the Exe file. That means, if your program needs only this Jar file and no other ones, you have only to deliver the generated Exe file! This option is only recommended for smaller programs (about 3 MB), because every time the Exe is started, it has to extract the Jar file again before it can start it.
+You can also change the filename of the temporary Jar (its ending needs not be ".jar") and specify if it should be deleted right after execution.
+
+On the fourth page, "Messages", you can change the error messages that will be shown if an error occurs while starting the Jar file. There may be templates for other languages on our website, http://www.xenoage.com/jestart/ (if you write one by editing the file jestart.ini, please send us your translation!).
+
+After these steps, switch back to the first page and click on the button "Generate Exe". If you don't want to place the Exe file in the same directory as the Jar file, a relative path from the Exe to the Jar will be stored. After that you should save your settings so that you have not to repeat all steps again if you create another Exe file.
+
+
+
+Frequently Asked Questions
+**************************
+
+Q: I get the error message "Failed to load control 'CommonDialog' from COMDLG32.OCX" or another error message when starting the jestart.exe
+A: Download and install the VB6 Runtimes from the Xenoage website.
+
+Q: Where do I have to place the Exe file?
+A: Place the generated Exe in the same directory as the executable Jar file. Otherwise the Jar will not be found.
+
+Q: My icons are not accepted!
+A: Please notice, that the program only supports icons with the format 32 x 32 pixels and 16 x 16 pixels with 256 colors. If your icons have another format, change it in an icon editor. Use "IconEdit32", a freeware icon editor, and your icons will be accepted!
+
+Q: The generated Exe file does not work! It shows no error message, but nothing happens.
+A: There seems to be a problem with your paths. You can "debug" the Exe file by creating an empty text file named "jestartlog.txt" in the directory where your generated Exe is. Run the Exe again, and it will be filled with information about what it did. Perhaps you can find the problem in the txt file. If not, mail to info@xenoage.com and we will solve your problem together. Tell us the complete path of the Exe, the Jar, and also send your jestartlog.txt.
+
+Q: Which version of Java do I need and are there certain things I have to mind?
+A: This program works with all versions of Java. You don't need to mind special things, you can not damage anything, so be not afraid of experiments.
+
+Q: This program is released under the GNU General Public License. Do my programs have also to be released under that license?
+A: It depends on the part of this program you are using. If you use the source code of the Xenoage Java Exe Starter, your program must also be released under the GPL (if you want a special license, write us an e-mail). If you just use the generated Exe file, it does not matter which license you are using.
+
+Q: This program requires the VB Runtimes. Do I also have to deliver the VB Runtimes with my Java program, so that the generated Exe runs on all computers?
+A: No, you only need to add the generated Exe file to your application path. It does not require any additional runtime files (since it is coded in C++, not in VB) and runs on all 32bit versions of Windows.
+
+Q: I have a problem which could not be solved with this tutorial!
+A: First take a look on the website of this program. You can find the address in the About-box. Then visit the Xenoage Discussion Board at http://www.xenoage.com/forum/ . If you can't find a solution, write an e-mail to info@xenoage.com with a detailed description of the problem. We try to help you!
+
+
+
+License
+*******
+
+Xenoage Java Exe Starter is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+Xenoage Java Exe Starter is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Xenoage Java Exe Starter (read license.txt); if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+
+
+Contact
+*******
+
+Andreas Wenger
+Peter Rosegger Str. 7
+86529 Schrobenhausen
+Germany
+
+Homepage: http://www.xenoage.com
+E-Mail:   info@xenoage.com
+
+

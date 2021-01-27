@@ -1,0 +1,6 @@
+TODO-Liste
+
+VB runtimes incl. comdlg32.ocx zum download anbieten:
+vbrun60sp5.exe + vbcont60.zip
+
+Mail vom 24.01.2006

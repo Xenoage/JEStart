@@ -1,0 +1,19 @@
+2.1:
+
+- The return code of the Java program (System.exit(int)) is returned to the prompt (thanks to Thomas Nenninger for the code).
+- It is now possible to use a given JRE path (thanks to Marius Augenstein for the idea).
+- There are now up to 3000 characters for the options and 2000 characters for the arguments, also other parameters have more characters now.
+- Bugfix: Packed jars start now also if called from other folder (thanks to Hayden Legendre for the report).
+
+2.0:
+
+- A certain version of the JRE can be demanded. If there are more than one allowed JREs, the newest one will automatically be chosen.
+- The Jar file can be packed into the Exe file. This is useful for small programs that consist only of a single Jar file. In this case you have only to deliver a single Exe file from now on.
+- It is now possible to place the Exe and the Jar files in different directories. For example, you can place the Exe file in the main directory of the application and the Jar file in the subdirectory "bin".
+- This software is now released under the GNU General Public License (GPL). You can modify the source code which you can download from our website http://www.xenoage.com/jestart/ . Please send us your enhancements of the source code so that other users can benefit from them too.
+
+1.0:
+- This program generates an exe with an arbitrary icon, that starts a given jar file when it is launched.
+
+
+(c) by Andreas Wenger, Xenoage Software

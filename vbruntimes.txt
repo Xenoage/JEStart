@@ -1,0 +1,4 @@
+You need the Visual Basic 6 Runtimes to use the Xenoage Java Exe Starter.
+If they are not installed on your system already, you can download them here:
+
+http://www.xenoage.com/downloads/vb6runtimes.exe
